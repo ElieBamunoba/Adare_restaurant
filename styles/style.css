@@ -1,21 +1,32 @@
-header{
-  background-color:blue;
-  height: 108px;
-  width: 1024px
+body{
+  background-color:#2f3035
 }
 
-nav{
-  background-color:red;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+}
+
+header {
+  background-color: blue;
+  height: 108px;
+  width: 1024px;
+}
+
+nav {
+  background-color: red;
   height: 40px;
   width: 1024px;
 }
-main{
-  background-color:rgb(143, 226, 111);
+main {
+  background-color: rgb(143, 226, 111);
   height: 400px;
   width: 1024px;
 }
 footer {
-  background-color:rgb(64, 144, 219);
+  background-color: rgb(64, 144, 219);
   height: 100px;
   width: 1024px;
 }

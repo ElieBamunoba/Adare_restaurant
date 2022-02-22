@@ -10,13 +10,13 @@ body{
 }
 
 header {
-  background-color: blue;
+  background-color: rgb(55, 102, 230);
   height: 108px;
   width: 1024px;
 }
 
 nav {
-  background-color: red;
+  background-color: rgb(230, 63, 63);
   height: 40px;
   width: 1024px;
 }

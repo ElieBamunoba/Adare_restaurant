@@ -13,7 +13,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="/stactic/css/style.css">
-
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
         integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
@@ -25,7 +27,6 @@
 </head>
 
 <body>
-
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -33,14 +34,12 @@
                 <h3>Dita Repository</h3>
                 <strong>DR</strong>
             </div>
-
             <ul class="list-unstyled components">
                 <li>
                     <a href="index.html">
                         <i class="fas fa-home"></i>
                         Home
                     </a>
-
                 </li>
                 <li>
                     <a href="past_papers.html">
@@ -60,118 +59,177 @@
                         About
                     </a>
                 </li>
-
-
             </ul>
-
-
         </nav>
 
         <!-- Page Content  -->
-        <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span></span>
-                    </button>
-                </div>
-                <div class="input-group rounded">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                        aria-describedby="search-addon" />
-                    <span class="input-group-text border-0" id="search-addon">
-                        <i class="fas fa-search"></i>
-                    </span>
-                </div>
-            </nav>
-
-            <div class="main-section">
-                <p>Welcome to Questions and Answers Page</p>
-            </div>
-
-            <div class="card">
-                <div class="card-body ">
-                    <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisici alias laborum sequi
-                        mollitia. Enim, nam impedit?</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugit numquam? Quam
-                        dignissimos ab nam repellat magnam! Soluta odit molestiae, officiis ab placeat delectus optio
-                        perferendis? Illum nesciunt dolore corrupti.
-                    </p>
-
-                    <div class="card-footer bg-transparent d-flex justify-content-between h-">
-                        <div class="d-flex">
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">C++</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">dart</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">flutter</button>
-                        </div>
-                        <p>12:35am 8/01/2022</p>
+        <div class="overflow-scroll">
+            <div id="content">
+                
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fas fa-align-left"></i>
+                            <span></span>
+                        </button>
                     </div>
-                </div>
-            </div>
-
-            <div class="card" style="margin-top: 1.0rem;">
-                <div class="card-body " >
-                    <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisici alias laborum sequi
-                        mollitia. Enim, nam impedit?</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugit numquam? Quam
-                        dignissimos ab nam repellat magnam! Soluta odit molestiae, officiis ab placeat delectus optio
-                        perferendis? Illum nesciunt dolore corrupti.
-                    </p>
-
-                    <div class="card-footer bg-transparent d-flex justify-content-between h-">
-                        <div class="d-flex">
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">C++</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">dart</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">flutter</button>
-                        </div>
-                        <p>12:35am 8/01/2022</p>
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                            aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                            <i class="fas fa-search"></i>
+                        </span>
                     </div>
-                </div>
-            </div>
-            <div class="card" style="margin-top: 1.0rem;">
-                <div class="card-body ">
-                    <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisici alias laborum sequi
-                        mollitia. Enim, nam impedit?</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugit numquam? Quam
-                        dignissimos ab nam repellat magnam! Soluta odit molestiae, officiis ab placeat delectus optio
-                        perferendis? Illum nesciunt dolore corrupti.
-                    </p>
+                </nav>
 
-                    <div class="card-footer bg-transparent d-flex justify-content-between h-">
-                        <div class="d-flex">
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">C++</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">dart</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">flutter</button>
+                <div class="main-section">
+                    <p>Welcome to Questions and Answers Page</p>
+                    <div class="card">
+                        <div class="card-body ">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisici alias laborum sequi
+                                mollitia. Enim, nam impedit?</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugit numquam? Quam
+                                dignissimos ab nam repellat magnam! Soluta odit molestiae, officiis ab placeat delectus
+                                optio
+                                perferendis? Illum nesciunt dolore corrupti.
+                            </p>
+                            <div class="card-footer bg-transparent d-flex justify-content-between h-">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">C++</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">dart</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">flutter</button>
+                                </div>
+                                <p>12:35am 8/01/2022</p>
+                            </div>
                         </div>
-                        <p>12:35am 8/01/2022</p>
                     </div>
-                </div>
-            </div>
-            <div class="card"  style="margin-top: 1.0rem;">
-                <div class="card-body ">
-                    <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisici alias laborum sequi
-                        mollitia. Enim, nam impedit?</h5>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugit numquam? Quam
-                        dignissimos ab nam repellat magnam! Soluta odit molestiae, officiis ab placeat delectus optio
-                        perferendis? Illum nesciunt dolore corrupti.
-                    </p>
+                    <div class="card" style="margin-top: 1.0rem;">
+                        <div class="card-body ">
+                            <h5 class="card-title">type 'List<dynamic>' is not a subtype of type 'List<TableRow>'
+                                        flutter
+                            </h5>
+                            <p class="card-text">
+                                I have a json object where data array contains different maps including a map with the
+                                type
+                                list and data which contains another array of maps. { "data": [ { "type&...
+                            </p>
 
-                    <div class="card-footer bg-transparent d-flex justify-content-between h-">
-                        <div class="d-flex">
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">C++</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">dart</button>
-                            <button type="button" class="btn btn-light" style="margin-right: 1.0rem;">flutter</button>
+                            <div class="card-footer bg-transparent d-flex justify-content-between h-">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">C++</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">dart</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">flutter</button>
+                                </div>
+                                <p>12:35am 8/01/2022</p>
+                            </div>
                         </div>
-                        <p>12:35am 8/01/2022</p>
+                    </div>
+                    <div class="card" style="margin-top: 1.0rem;">
+                        <div class="card-body ">
+                            <h5 class="card-title">type 'List<dynamic>' is not a subtype of type 'List<TableRow>'
+                                        flutter
+                            </h5>
+                            <p class="card-text">
+                                I have a json object where data array contains different maps including a map with the
+                                type
+                                list and data which contains another array of maps. { "data": [ { "type&...
+                            </p>
+
+                            <div class="card-footer bg-transparent d-flex justify-content-between h-">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">C++</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">dart</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">flutter</button>
+                                </div>
+                                <p>12:35am 8/01/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 1.0rem;">
+                        <div class="card-body ">
+                            <h5 class="card-title">type 'List<dynamic>' is not a subtype of type 'List<TableRow>'
+                                        flutter
+                            </h5>
+                            <p class="card-text">
+                                I have a json object where data array contains different maps including a map with the
+                                type
+                                list and data which contains another array of maps. { "data": [ { "type&...
+                            </p>
+
+                            <div class="card-footer bg-transparent d-flex justify-content-between h-">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">C++</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">dart</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">flutter</button>
+                                </div>
+                                <p>12:35am 8/01/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 1.0rem;">
+                        <div class="card-body ">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisici alias laborum sequi
+                                mollitia. Enim, nam impedit?</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugit numquam? Quam
+                                dignissimos ab nam repellat magnam! Soluta odit molestiae, officiis ab placeat delectus
+                                optio
+                                perferendis? Illum nesciunt dolore corrupti.
+                            </p>
+
+                            <div class="card-footer bg-transparent d-flex justify-content-between h-">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">C++</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">dart</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">flutter</button>
+                                </div>
+                                <p>12:35am 8/01/2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 1.0rem;">
+                        <div class="card-body ">
+                            <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisici alias laborum sequi
+                                mollitia. Enim, nam impedit?</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugit numquam? Quam
+                                dignissimos ab nam repellat magnam! Soluta odit molestiae, officiis ab placeat delectus
+                                optio
+                                perferendis? Illum nesciunt dolore corrupti.
+                            </p>
+
+                            <div class="card-footer bg-transparent d-flex justify-content-between h-">
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">C++</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">dart</button>
+                                    <button type="button" class="btn btn-light"
+                                        style="margin-right: 1.0rem;">flutter</button>
+                                </div>
+                                <p>12:35am 8/01/2022</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
 
     </div>
